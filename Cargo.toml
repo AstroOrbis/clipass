@@ -1,0 +1,25 @@
+[package]
+name = "clipass"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A command-line password manager written in Rust, feature-complete with encryption and password generation."
+homepage = "https://astroorbis.com"
+repository = "https://github.com/astroorbis/clipass"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dirs = "5.0.1"
+getrandom = "0.2.10"
+hashy = "0.1.0"
+inquire = "0.6.2"
+magic-crypt = "3.1.12"
+rand = "0.8.5"
+rusqlite = "0.29.0"
+touch = "0.0.1"
+
+[[bin]]
+name = "clipass"
+path = "src/main.rs"
